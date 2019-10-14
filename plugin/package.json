@@ -1,6 +1,6 @@
 {
     "name": "nativescript-tween",
-    "version": "1.0.9",
+    "version": "0.0.0",
     "description": "Nativescript Native Tween plugin.",
     "main": "./tween",
     "typings": "./tween.d.ts",
