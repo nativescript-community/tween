@@ -18,3 +18,5 @@ This is a native wrapper around [tween.js](https://github.com/tweenjs/tween.js/)
 ## API
 
 It exports the same API as ```Tween.js```
+
+For now grouping, chaining, repeating... are not supported. Just basic tweening.
