@@ -1,0 +1,37 @@
+{
+    "description": "NativeScript canvas Demo for Vue",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "readme": "README.md",
+    "repository": "http://www.github.com/Akylas/nativescript-tween.git",
+    "nativescript": {
+        "id": "org.nativescript.demovuetween",
+        "tns-android": {
+            "version": "6.1.2"
+        },
+        "tns-ios": {
+            "version": "6.1.1"
+        }
+    },
+    "dependencies": {
+        "nativescript-akylas-vue": "^2.3.5",
+        "nativescript-tween": "file:../plugin",
+        "tns-core-modules": "^6.1.1"
+    },
+    "devDependencies": {
+        "nativescript-akylas-webpack-template": "^0.3.0",
+        "nativescript-dev-webpack": "~1.2.1",
+        "tns-platform-declarations": "^6.1.1",
+        "tslint": "^5.20.0",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-config-standard": "^8.0.1",
+        "typescript": "^3.6.4",
+        "vue": "^2.6.10",
+        "vue-i18n": "^8.14.1",
+        "vue-property-decorator": "^8.2.2",
+        "webpack": "^4.41.1",
+        "webpack-cli": "^3.3.9"
+    },
+    "scripts": {
+        "tslint": "npm i && tslint --config '../tslint.json' 'app/**/*.ts' --exclude '**/node_modules/**'"
+    }
+}

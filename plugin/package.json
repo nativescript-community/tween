@@ -1,0 +1,32 @@
+{
+    "name": "nativescript-tween",
+    "version": "1.0.9",
+    "description": "Nativescript Native Tween plugin.",
+    "main": "./tween",
+    "typings": "./tween.d.ts",
+    "nativescript": {
+        "platforms": {
+            "android": "3.0.0",
+            "ios": "3.0.0"
+        }
+    },
+    "dependencies": {
+        "@tweenjs/tween.js": "18.3.1"
+    },
+    "keywords": [
+        "NativeScript",
+        "JavaScript",
+        "Android",
+        "iOS"
+    ],
+    "author": {
+        "name": "Martin Guillon",
+        "email": "martin@akylas.fr"
+    },
+    "bugs": {
+        "url": "https://github.com/Akylas/nativescript-tween/issues"
+    },
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/Akylas/nativescript-tween",
+    "readmeFilename": "README.md"
+}
