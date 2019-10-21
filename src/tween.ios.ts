@@ -45,19 +45,22 @@ export const TWEEN = {
         getOrCreateAnimator() {
             if (!this._animator) {
                 const options = 0;
+                CLog(CLogTypes.info, 'create Tween', this._duration / 1000);
+                let startTime
                 this._animator = PMTweenUnit.alloc().initWithPropertyStartingValueEndingValueDurationOptionsEasingBlock(null, 0, 1, this._duration / 1000, options, null);
                 this._animator.completeBlock = () => {
-                    CLog(CLogTypes.info, 'completeBlock');
+                    CLog(CLogTypes.info, 'completeBlock', Date.now() - startTime);
                     this._onAnimationEnd();
                     if (this._onCompleteCallback !== null) {
                         this._onCompleteCallback(this._object);
                     }
                 };
                 this._animator.updateBlock = () => {
-                    CLog(CLogTypes.info, 'updateBlock', this._animator.currentValue);
-                    this.update(this._animator.currentValue);
+                    CLog(CLogTypes.info, 'updateBlock', this._animator.tweenProgress, Date.now() - startTime);
+                    this.update(this._animator.tweenProgress);
                 };
                 this._animator.startBlock = () => {
+                    startTime = Date.now();
                     CLog(CLogTypes.info, 'startBlock');
                     this._playing = true;
                     this._paused = false;
@@ -66,7 +69,7 @@ export const TWEEN = {
                     }
                 };
                 this._animator.stopBlock = () => {
-                    CLog(CLogTypes.info, 'stopBlock');
+                    CLog(CLogTypes.info, 'stopBlock', Date.now() - startTime);
                     this._playing = false;
                     this._paused = false;
                     if (this._onStopCallback !== null) {
@@ -74,12 +77,12 @@ export const TWEEN = {
                     }
                 };
                 this._animator.pauseBlock = () => {
-                    CLog(CLogTypes.info, 'pauseBlock');
+                    CLog(CLogTypes.info, 'pauseBlock', Date.now() - startTime);
                     this._playing = false;
                     this._paused = true;
                 };
                 this._animator.resumeBlock = () => {
-                    CLog(CLogTypes.info, 'resumeBlock');
+                    CLog(CLogTypes.info, 'resumeBlock', Date.now() - startTime);
                     this._playing = true;
                     this._paused = false;
                 };
