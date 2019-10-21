@@ -1,6 +1,6 @@
 import { setDebug, TWEEN } from 'nativescript-tween';
 import { device, screen } from 'tns-core-modules/platform';
-// setDebug(true);
+setDebug(true);
 export default {
     name: 'Home',
     template: `
