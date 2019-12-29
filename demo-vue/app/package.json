@@ -2,6 +2,7 @@
   "main": "main.js",
   "name": "nativescript-vue-template",
   "version": "0.1.1",
+  "profiling": "counters",
   "android": {
     "v8Flags": "--expose_gc",
     "markingMode": "none"
