@@ -2,6 +2,7 @@ node_modules/
 src/
 bin/
 hooks/
+pnpm-lock.yaml
 *.ts
 *.old
 tsconfig.json
