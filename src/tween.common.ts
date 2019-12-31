@@ -23,7 +23,6 @@ export const CLog = (type: CLogTypes = 0, ...args) => {
     }
 };
 
-export * from './tween.common';
 
 import REAL_TWEEN from '@tweenjs/tween.js';
 
@@ -322,7 +321,7 @@ export let Interpolation: Interpolation = REAL_TWEEN.Interpolation;
 
 const _runningTweens: TweenBase[] = [];
 export function getAll(): TweenBase[] {
-    return this._runningTweens;
+    return _runningTweens;
 }
 export function removeAll() {}
 export function add(tween: TweenBase) {}
