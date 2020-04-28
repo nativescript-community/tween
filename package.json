@@ -37,14 +37,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Akylas/nativescript-tween.git"
+        "url": "git+https://github.com/farfromrefug/nativescript-tween.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Akylas/nativescript-tween/issues"
+        "url": "https://github.com/farfromrefug/nativescript-tween/issues"
     },
-    "homepage": "https://github.com/Akylas/nativescript-tween#readme",
+    "homepage": "https://github.com/farfromrefug/nativescript-tween#readme",
     "commitlint": {
         "extends": [
             "@commitlint/config-conventional"

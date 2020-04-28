@@ -27,9 +27,9 @@
         "email": "martin@akylas.fr"
     },
     "bugs": {
-        "url": "https://github.com/Akylas/nativescript-tween/issues"
+        "url": "https://github.com/farfromrefug/nativescript-tween/issues"
     },
     "license": "Apache-2.0",
-    "homepage": "https://github.com/Akylas/nativescript-tween",
+    "homepage": "https://github.com/farfromrefug/nativescript-tween",
     "readmeFilename": "README.md"
 }
