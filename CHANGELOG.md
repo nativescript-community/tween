@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.8](https://github.com/farfromrefug/nativescript-tween/compare/v0.0.7...v0.0.8) (2020-05-21)
+
+
+### Bug Fixes
+
+* esm using import for tree shaking ([2e19844](https://github.com/farfromrefug/nativescript-tween/commit/2e19844135f907735973027c1a2b04b4bd09c762))
+
+
+
+
+
 ## [0.0.7](https://github.com/farfromrefug/nativescript-tween/compare/v0.0.6...v0.0.7) (2020-05-21)
 
 
