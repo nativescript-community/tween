@@ -21,3 +21,6 @@ Pods
 *.xcuserdatad
 /plugin/README.md
 pnpm-lock.yaml
+plugin/**/*js.map
+plugin/**/*js
+

@@ -1,6 +1,6 @@
 import TweenBase, { add, CLog, CLogTypes, Easing, getAll, Group, Interpolation, remove, removeAll, setDebug, update } from './tween.common';
 
-import { profile } from 'tns-core-modules/profiling';
+import { profile } from '@nativescript/core/profiling';
 
 export { CLog, setDebug };
 

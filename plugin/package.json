@@ -2,19 +2,17 @@
     "name": "nativescript-tween",
     "version": "0.0.6",
     "description": "Nativescript Native Tween plugin.",
-    "main": "./tween",
+    "main": "./tween.js",
+    "module": "./tween.mjs",
     "typings": "./tween.d.ts",
     "nativescript": {
         "platforms": {
-            "android": "3.0.0",
-            "ios": "3.0.0"
+            "android": "6.0.0",
+            "ios": "6.0.0"
         }
     },
     "dependencies": {
         "@tweenjs/tween.js": "18.5.0"
-    },
-    "devDependencies": {
-        "@types/tween.js": "^17.2.0"
     },
     "keywords": [
         "NativeScript",
