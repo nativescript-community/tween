@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.9](https://github.com/farfromrefug/nativescript-tween/compare/v0.0.8...v0.0.9) (2020-05-21)
+
+
+### Bug Fixes
+
+* sideEffects for tree shacking ([d177ee6](https://github.com/farfromrefug/nativescript-tween/commit/d177ee6f3fa8df9650e447143d4dff11d4760db9))
+
+
+
+
+
 ## [0.0.8](https://github.com/farfromrefug/nativescript-tween/compare/v0.0.7...v0.0.8) (2020-05-21)
 
 
