@@ -2,8 +2,7 @@
     "name": "nativescript-tween",
     "version": "0.0.9",
     "description": "Nativescript Native Tween plugin.",
-    "main": "./tween.js",
-    "module": "./tween.mjs",
+    "main": "./tween",
     "sideEffects": false,
     "typings": "./tween.d.ts",
     "nativescript": {
