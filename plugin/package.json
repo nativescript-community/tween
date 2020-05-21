@@ -4,6 +4,7 @@
     "description": "Nativescript Native Tween plugin.",
     "main": "./tween.js",
     "module": "./tween.mjs",
+    "sideEffects": false,
     "typings": "./tween.d.ts",
     "nativescript": {
         "platforms": {
