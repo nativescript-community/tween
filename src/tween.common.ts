@@ -13,12 +13,12 @@ export const CLog = (type: CLogTypes = 0, ...args) => {
     if (debug) {
         if (type === 0) {
             // Info
-            console.log('[nativescript-tween]', ...args);
+            console.log('[@nativescript-community/tween]', ...args);
         } else if (type === 1) {
             // Warning
-            console.warn('[nativescript-tween]', ...args);
+            console.warn('[@nativescript-community/tween]', ...args);
         } else if (type === 2) {
-            console.error('[nativescript-tween]', ...args);
+            console.error('[@nativescript-community/tween]', ...args);
         }
     }
 };
@@ -247,7 +247,6 @@ export default abstract class TweenBase {
     update(elapsed: number): boolean {
         let property;
         // var elapsed;
-        let value;
 
         // if (time < this._startTime) {
         //     return true;
@@ -264,7 +263,7 @@ export default abstract class TweenBase {
         // elapsed = delta*  this._duration;
         // elapsed = this._duration === 0 || elapsed > 1 ? 1 : elapsed;
 
-        value = this._easingFunction(elapsed);
+        const value = this._easingFunction(elapsed);
 
         for (property in this._valuesEnd) {
             // Don't update properties that do not exist in the source object
@@ -316,8 +315,8 @@ export class Group {
     }
 }
 
-export let Easing: Easing = REAL_TWEEN.Easing;
-export let Interpolation: Interpolation = REAL_TWEEN.Interpolation;
+export const Easing: Easing = REAL_TWEEN.Easing;
+export const Interpolation: Interpolation = REAL_TWEEN.Interpolation;
 
 const _runningTweens: TweenBase[] = [];
 export function getAll(): TweenBase[] {

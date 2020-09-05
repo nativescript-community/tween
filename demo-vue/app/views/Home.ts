@@ -1,5 +1,5 @@
-import { setDebug, TWEEN } from 'nativescript-tween';
-import { device, screen } from 'tns-core-modules/platform';
+import { setDebug, TWEEN } from '@nativescript-community/tween';
+import { device, screen } from '@nativescript/core/platform';
 setDebug(true);
 export default {
     name: 'Home',

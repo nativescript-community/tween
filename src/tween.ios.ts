@@ -1,5 +1,5 @@
-import TweenBase, { add, CLog, CLogTypes, Easing, getAll, Group, Interpolation, remove, removeAll, setDebug, update } from './tween.common';
-import { profile } from '@nativescript/core/profiling';
+import TweenBase, { CLog, CLogTypes, Easing, Group, Interpolation, add, getAll, remove, removeAll, setDebug, update } from './tween.common';
+import { profile } from '@nativescript/core';
 
 export { CLog, setDebug };
 
@@ -112,7 +112,7 @@ class Tween extends TweenBase {
 }
 
 export const TWEEN = {
-    Tween: Tween,
+    Tween,
     Group,
     Easing,
     Interpolation,

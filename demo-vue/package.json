@@ -2,7 +2,7 @@
     "description": "NativeScript canvas Demo for Vue",
     "license": "SEE LICENSE IN LICENSE.md",
     "readme": "README.md",
-    "repository": "http://www.github.com/Akylas/nativescript-tween.git",
+    "repository": "http://www.github.com/Akylas/@nativescript-community/tween.git",
     "nativescript": {
         "id": "org.nativescript.demovuetween",
         "tns-android": {
@@ -14,8 +14,8 @@
     },
     "dependencies": {
         "nativescript-akylas-vue": "^2.3.5",
-        "nativescript-tween": "file:../plugin",
-        "tns-core-modules": "^6.1.2"
+        "@nativescript-community/tween": "file:../plugin",
+        "@nativescript/core": "^6.1.2"
     },
     "devDependencies": {
         "nativescript-akylas-webpack-template": "^0.3.2",

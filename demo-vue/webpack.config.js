@@ -30,7 +30,7 @@ module.exports = env => {
         const srcFullPath = resolve(projectRoot, '..', 'src');
         aliases = Object.assign(aliases, {
             '#': srcFullPath,
-            'nativescript-tween$': '#/tween.' + platform
+            '@nativescript-community/tween$': '#/tween.' + platform
         });
     }
 

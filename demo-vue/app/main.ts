@@ -1,7 +1,7 @@
 import Vue from 'nativescript-vue';
 import * as views from './views';
 
-import * as trace from 'tns-core-modules/trace';
+import * as trace from '@nativescript/core/trace';
 trace.addCategories(trace.categories.NativeLifecycle);
 trace.addCategories(trace.categories.Layout);
 // trace.enable();

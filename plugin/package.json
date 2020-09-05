@@ -1,5 +1,5 @@
 {
-    "name": "nativescript-tween",
+    "name": "@nativescript-community/tween",
     "version": "0.0.10",
     "description": "Nativescript Native Tween plugin.",
     "main": "./tween",
@@ -12,7 +12,7 @@
         }
     },
     "dependencies": {
-        "@tweenjs/tween.js": "18.5.0"
+        "@tweenjs/tween.js": "18.6.0"
     },
     "keywords": [
         "NativeScript",
@@ -25,9 +25,9 @@
         "email": "martin@akylas.fr"
     },
     "bugs": {
-        "url": "https://github.com/farfromrefug/nativescript-tween/issues"
+        "url": "https://github.com/nativescript-community/tween/issues"
     },
     "license": "Apache-2.0",
-    "homepage": "https://github.com/farfromrefug/nativescript-tween",
+    "homepage": "https://github.com/nativescript-community/tween",
     "readmeFilename": "README.md"
 }
