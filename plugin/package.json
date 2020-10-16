@@ -1,6 +1,6 @@
 {
     "name": "@nativescript-community/tween",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "description": "Nativescript Native Tween plugin.",
     "main": "./tween",
     "sideEffects": false,
