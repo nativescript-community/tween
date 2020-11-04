@@ -1,7 +1,7 @@
 {
     "name": "@nativescript-community/tween",
     "version": "0.0.12",
-    "description": "Nativescript Native Tween plugin.",
+    "description": "A NativeScript plugin that natively wraps tween.js, a tweening engine for easy animations, incorporating optimised Robert Penner's equations",
     "main": "./tween",
     "sideEffects": false,
     "typings": "./tween.d.ts",
@@ -18,7 +18,12 @@
         "NativeScript",
         "JavaScript",
         "Android",
-        "iOS"
+        "iOS",
+        "tweens",
+        "tween",
+        "animation",
+        "animations",
+        "tween.js"
     ],
     "author": {
         "name": "Martin Guillon",
