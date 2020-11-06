@@ -84,7 +84,6 @@ export class ItemsComponent implements OnInit {
     } 
 
     startTween() {
-        console.log("HERE?")
         this.state = !this.state;
         new TWEEN.Tween({ value: this.sizeToPercent(this.boxRef[this.properties[this.selectedProperty]["name"]], this.properties[this.selectedProperty]["minimum"], this.properties[this.selectedProperty]["maximum"]) })
             .easing(this.state ? this.easings[this.selectedEasing]["out"] : this.easings[this.selectedEasing]["in"] )
