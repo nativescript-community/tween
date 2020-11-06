@@ -40,13 +40,14 @@ export function First({ navigation }: FirstScreenProps) {
     ];
     let animationDuration = 500;
     let state = false;
-    let isBusy = false;
 
     const [startAnimationBtnText, setStartAnimationBtnText] = useState("Start Animation");
     const [selectedProperty, setSelectedProperty] = useState(0);
     const [selectedPropertyText, setSelectedPropertyText] = useState(properties[selectedProperty]['name']);
     const [selectedEasing, setSelectedEasing] = useState(1);
     const [selectedEasingText, setSelectedEasingText] = useState(easings[selectedEasing]['name']);
+
+    const [isBusy, setIsBusy] = useState(false);
 
     function selectProperty() {
         const propertyNames = properties.map(({name}) => name);
@@ -105,10 +106,10 @@ export function First({ navigation }: FirstScreenProps) {
     async function reset() {
         if (state) {
             setStartAnimationBtnText("Resetting...");
-            isBusy = true;
+            setIsBusy(true);
             startTween();
             await new Promise(r => setTimeout(r, animationDuration * 2));
-            isBusy = false;
+            setIsBusy(false);
             setStartAnimationBtnText("Start Animation");
         }
     }
