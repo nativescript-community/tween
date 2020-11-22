@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.13](https://github.com/nativescript-community/tween/compare/v0.0.12...v0.0.13) (2020-11-22)
+
+
+### Bug Fixes
+
+* update readme and package json ([5e41713](https://github.com/nativescript-community/tween/commit/5e41713c6ac33ac23cef158a3e51538c9e3fb372))
+
+
+
+
+
 ## [0.0.12](https://github.com/farfromrefug/nativescript-tween/compare/v0.0.11...v0.0.12) (2020-10-16)
 
 **Note:** Version bump only for package @nativescript-community/tween

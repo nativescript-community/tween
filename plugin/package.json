@@ -1,6 +1,6 @@
 {
     "name": "@nativescript-community/tween",
-    "version": "0.0.12",
+    "version": "0.0.13",
     "description": "Natively wraps tween.js, a tweening engine for easy animations, incorporating optimized Robert Penner's equations",
     "main": "./tween",
     "sideEffects": false,
