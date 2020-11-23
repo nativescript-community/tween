@@ -6,7 +6,7 @@ export function setDebug(value: boolean) {
 export enum CLogTypes {
     info,
     warning,
-    error
+    error,
 }
 
 export const CLog = (type: CLogTypes = 0, ...args) => {
@@ -22,7 +22,6 @@ export const CLog = (type: CLogTypes = 0, ...args) => {
         }
     }
 };
-
 
 import REAL_TWEEN from '@tweenjs/tween.js';
 
@@ -246,22 +245,6 @@ export default abstract class TweenBase {
     }
     update(elapsed: number): boolean {
         let property;
-        // var elapsed;
-
-        // if (time < this._startTime) {
-        //     return true;
-        // }
-
-        // if (this._onStartCallbackFired === false) {
-        //     if (this._onStartCallback !== null) {
-        //         this._onStartCallback(this._object);
-        //     }
-
-        //     this._onStartCallbackFired = true;
-        // }
-
-        // elapsed = delta*  this._duration;
-        // elapsed = this._duration === 0 || elapsed > 1 ? 1 : elapsed;
 
         const value = this._easingFunction(elapsed);
 

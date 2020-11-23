@@ -12,27 +12,27 @@ class Tween extends TweenBase {
         super(object);
         this._animatorListener = new android.animation.Animator.AnimatorListener({
             onAnimationStart: (animator: android.animation.Animator) => {
-                CLog(CLogTypes.info, 'onAnimationStart');
+                // CLog(CLogTypes.info, 'onAnimationStart');
                 this._onAnimationStart();
             },
             onAnimationRepeat: (animator: android.animation.Animator) => {
-                CLog(CLogTypes.info, 'onAnimationRepeat');
+                // CLog(CLogTypes.info, 'onAnimationRepeat');
             },
             onAnimationEnd: (animator: android.animation.Animator) => {
-                CLog(CLogTypes.info, 'onAnimationEnd');
+                // CLog(CLogTypes.info, 'onAnimationEnd');
                 this._onAnimationEnd();
             },
             onAnimationCancel: (animator: android.animation.Animator) => {
-                CLog(CLogTypes.info, 'onAnimationCancel');
+                // CLog(CLogTypes.info, 'onAnimationCancel');
                 this._onAnimationCancel();
-            }
+            },
         });
         // this._animator.addListener(this._animatorListener);
         this._animatorUpdateListener = new android.animation.ValueAnimator.AnimatorUpdateListener({
             onAnimationUpdate: (animator: android.animation.ValueAnimator) => {
                 CLog(CLogTypes.info, 'onAnimationUpdate', animator.getAnimatedValue());
                 this._onAnimationUpdate(animator.getAnimatedValue());
-            }
+            },
         });
     }
     startAnimator() {
@@ -119,7 +119,7 @@ export const TWEEN = {
     removeAll,
     add,
     remove,
-    update
+    update,
 };
 export default TWEEN;
 // module.exports = TWEEN;
