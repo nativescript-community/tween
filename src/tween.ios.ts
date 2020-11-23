@@ -45,33 +45,33 @@ class Tween extends TweenBase {
     getOrCreateAnimator() {
         if (!this._animator) {
             const options = 0;
-            CLog(CLogTypes.info, 'create Tween', this._duration / 1000);
+            // CLog(CLogTypes.info, 'create Tween', this._duration / 1000);
             let startTime;
             this._animator = PMTweenUnit.alloc().initWithPropertyStartingValueEndingValueDurationOptionsEasingBlock(null, 0, 1, this._duration / 1000, options, null);
             this._animator.completeBlock = () => {
-                CLog(CLogTypes.info, 'completeBlock', Date.now() - startTime);
+                // CLog(CLogTypes.info, 'completeBlock', Date.now() - startTime);
                 this._onAnimationEnd();
             };
             this._animator.updateBlock = () => {
-                CLog(CLogTypes.info, 'updateBlock', this._animator.tweenProgress, Date.now() - startTime);
+                // CLog(CLogTypes.info, 'updateBlock', this._animator.tweenProgress, Date.now() - startTime);
                 this._onAnimationUpdate(this._animator.tweenProgress);
             };
             this._animator.startBlock = () => {
                 startTime = Date.now();
-                CLog(CLogTypes.info, 'startBlock');
+                // CLog(CLogTypes.info, 'startBlock');
                 this._onAnimationStart();
             };
             this._animator.stopBlock = () => {
-                CLog(CLogTypes.info, 'stopBlock', Date.now() - startTime);
+                // CLog(CLogTypes.info, 'stopBlock', Date.now() - startTime);
                 this._onAnimationStop();
             };
             this._animator.pauseBlock = () => {
-                CLog(CLogTypes.info, 'pauseBlock', Date.now() - startTime);
+                // CLog(CLogTypes.info, 'pauseBlock', Date.now() - startTime);
                 this._playing = false;
                 this._paused = true;
             };
             this._animator.resumeBlock = () => {
-                CLog(CLogTypes.info, 'resumeBlock', Date.now() - startTime);
+                // CLog(CLogTypes.info, 'resumeBlock', Date.now() - startTime);
                 this._playing = true;
                 this._paused = false;
             };
