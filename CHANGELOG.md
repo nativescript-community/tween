@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.13](https://github.com/nativescript-community/tween/compare/v0.0.12...v0.0.13) (2020-11-22)
+
+
+### Bug Fixes
+
+* button enabled in react demo ([38994c5](https://github.com/nativescript-community/tween/commit/38994c5cd71270f2f43913d1bafa8cdf32166779))
+* import error ([18b6c52](https://github.com/nativescript-community/tween/commit/18b6c52b0372ba71b436f0dcfb952d108963deca))
+* remove console log ([a6b6a8b](https://github.com/nativescript-community/tween/commit/a6b6a8beb5542415957cdd75ad73845e20cd4891))
+* remove types that don't exist ([0d2c70f](https://github.com/nativescript-community/tween/commit/0d2c70fe0b1502b4152b75c7530627ca0640ce07))
+* update readme and package json ([5e41713](https://github.com/nativescript-community/tween/commit/5e41713c6ac33ac23cef158a3e51538c9e3fb372))
+
+
+### Features
+
+* add Angular demo ([930fac5](https://github.com/nativescript-community/tween/commit/930fac586c288742500b7b3dc9faf8a620472244))
+* add new Vue demo ([ecd6715](https://github.com/nativescript-community/tween/commit/ecd671519f5645e53c452b4524fdc4da11bb7008))
+* add React demo ([9d3ab94](https://github.com/nativescript-community/tween/commit/9d3ab941e2e659ab2c40c5308f10a7063f02e463))
+* add Svelte demo ([1e10d41](https://github.com/nativescript-community/tween/commit/1e10d41f2e5dcecb7cbbe298b97c49d496c47dd9))
+* update readme ([3d76c78](https://github.com/nativescript-community/tween/commit/3d76c786f69d107333871208dac09f33e222c652))
+
+
+
+
+
 ## [0.0.12](https://github.com/nativescript-community/tween/compare/v0.0.11...v0.0.12) (2020-10-16)
 
 **Note:** Version bump only for package @nativescript-community/tween

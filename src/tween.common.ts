@@ -298,8 +298,8 @@ export class Group {
     }
 }
 
-export const Easing: Easing = REAL_TWEEN.Easing;
-export const Interpolation: Interpolation = REAL_TWEEN.Interpolation;
+export const Easing = REAL_TWEEN.Easing;
+export const Interpolation = REAL_TWEEN.Interpolation;
 
 const _runningTweens: TweenBase[] = [];
 export function getAll(): TweenBase[] {

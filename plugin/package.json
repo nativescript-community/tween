@@ -1,7 +1,7 @@
 {
     "name": "@nativescript-community/tween",
-    "version": "0.0.12",
-    "description": "Nativescript Native Tween plugin.",
+    "version": "0.0.13",
+    "description": "Natively wraps tween.js, a tweening engine for easy animations, incorporating optimized Robert Penner's equations",
     "main": "./tween",
     "sideEffects": false,
     "typings": "./tween.d.ts",
@@ -18,7 +18,18 @@
         "NativeScript",
         "JavaScript",
         "Android",
-        "iOS"
+        "iOS",
+        "tweens",
+        "tween",
+        "animation",
+        "animations",
+        "tween.js",
+        "Angular",
+        "Vue",
+        "Svelte",
+        "React",
+        "preview|https://raw.githubusercontent.com/nativescript-community/tween/master/images/demo-ios.gif|iOS Demo",
+        "preview|https://raw.githubusercontent.com/nativescript-community/tween/master/images/demo-android.gif|Android Demo"
     ],
     "author": {
         "name": "Martin Guillon",
@@ -27,7 +38,10 @@
     "bugs": {
         "url": "https://github.com/nativescript-community/tween/issues"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nativescript-community/tween"
+    },
     "license": "Apache-2.0",
-    "homepage": "https://github.com/nativescript-community/tween",
     "readmeFilename": "README.md"
 }
