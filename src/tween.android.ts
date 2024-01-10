@@ -5,6 +5,7 @@ import { profile } from '@nativescript/core';
 export { CLog, setDebug };
 
 class Tween extends TweenBase {
+    _infinitAnimationCanceled: boolean = false;
     _animator: android.animation.ValueAnimator;
     _animatorListener: android.animation.Animator.AnimatorListener;
     _animatorUpdateListener: android.animation.ValueAnimator.AnimatorUpdateListener;
@@ -36,11 +37,23 @@ class Tween extends TweenBase {
         });
     }
     startAnimator() {
-        this.getOrCreateAnimator().start();
+        const animator = this.getOrCreateAnimator();
+        // Reset the animator if canceled manually after an Infinit animation see: https://developer.android.com/reference/android/view/animation/Animation#cancel()
+        if(this._infinitAnimationCanceled) {
+            animator.reset();
+        }
+        animator.start();
     }
     stopAnimator() {
         if (this._animator) {
-            this._animator.end();
+            if(this?._repeat === Infinity) {
+                this._repeat = 0;
+                this._animator?.cancel();
+                this._infinitAnimationCanceled = true;
+            }
+            else {
+                this._animator.end();
+            }
         }
     }
     endAnimator() {
