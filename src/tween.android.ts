@@ -48,7 +48,7 @@ class Tween extends TweenBase {
         if (this._animator) {
             if(this?._repeat === Infinity) {
                 this._repeat = 0;
-                this._animator?.cancel()
+                this._animator?.cancel();
                 this._infinitAnimationCanceled = true;
             }
             else {
