@@ -5,7 +5,7 @@ import { profile } from '@nativescript/core';
 export { CLog, setDebug };
 
 class Tween extends TweenBase {
-    _infinitAnimationCanceled: boolean = false
+    _infinitAnimationCanceled: boolean = false;
     _animator: android.animation.ValueAnimator;
     _animatorListener: android.animation.Animator.AnimatorListener;
     _animatorUpdateListener: android.animation.ValueAnimator.AnimatorUpdateListener;
